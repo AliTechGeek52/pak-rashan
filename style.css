@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #014535;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 10px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+}
+section span {
+  display: block;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+section h1 {
+  background-color: #014535;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.message-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+.message-section img {
+  width: 193px;
+  height: 262px;
+}
+.message-text {
+  width: 10%;
+  padding: 30px;
+  margin: 20px;
+}
+
+form {
+  text-align: center;
+  padding: 20px;
+}
+form ul li {
+  list-style-type: none;
+}
+form input {
+  padding: 5px;
+  margin: 10px;
+}
