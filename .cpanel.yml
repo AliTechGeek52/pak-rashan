@@ -4,3 +4,7 @@ deployment:
  - export DEPLOYPATH=/home/pakrashan/public_html
  - /bin/cp index.html $DEPLOYPATH
  - /bin/cp style.css $DEPLOYPATH
+ - /bin/cp sign-in.html $DEPLOYPATH
+ - /bin/cp sign-up.html $DEPLOYPATH
+ - /bin/cp add-info.html $DEPLOYPATH
+ - /bin/ cp -R * $DEPLOYPATH
