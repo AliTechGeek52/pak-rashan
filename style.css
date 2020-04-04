@@ -146,6 +146,10 @@ input[type="number"]::placeholder {
   text-align: center;
 }
 
+input[type="password"]::placeholder {
+  text-align: center;
+}
+
 @media (min-width: 400px) {
   form {
     grid-template-columns: 200px 1fr;
