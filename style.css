@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
 .header-items {
   display: flex;
@@ -9,6 +12,19 @@
   margin: 15px;
 }
 
+.header-items img {
+  width: 168px;
+  height: 87px;
+  margin-top: -21px;
+}
+
+.links-position {
+  margin: 15px;
+}
+.line {
+  border-left: 1px solid black;
+  height: 35px;
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -17,14 +33,20 @@ nav ul {
 
 nav ul li {
   list-style-type: none;
-  padding: 10px;
+  padding: 13px;
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li a {
   color: white;
 }
 
 a {
   text-decoration: none;
   color: black;
-  padding: 5px;
+  padding: 7px;
+  /* margin: 20px; */
 }
 
 img {
@@ -32,21 +54,29 @@ img {
 }
 section span {
   display: block;
-  background-color: black;
+  background-color: #081b1a;
   text-align: center;
   color: white;
+  padding: 10px;
 }
 
 section h1 {
   background-color: #014535;
   color: white;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
+  padding: 16px;
+  letter-spacing: 1px;
+}
+
+.message-section-spacing {
+  margin-top: -5px;
 }
 
 .message-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px;
   margin: 20px;
 }
@@ -55,19 +85,80 @@ section h1 {
   height: 262px;
 }
 .message-text {
-  width: 10%;
+  width: 22%;
   padding: 30px;
   margin: 20px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  font-size: 18px;
 }
 
 form {
-  text-align: center;
-  padding: 20px;
-}
-form ul li {
-  list-style-type: none;
+  display: grid;
+  padding: 2em;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
 }
 form input {
-  padding: 5px;
-  margin: 10px;
+  background: #081b1a;
+  border: 2px solid #014535;
+  color: white;
+}
+
+.result{
+  padding:1.7em;
+  color:#014535;
+  font-size:20px;
+  font-style:bold;
+}
+form button {
+  background: #014535;
+  padding: 0.7em;
+  width: 50%;
+  border: none;
+  color: white;
+  text-align: center;
+  margin:auto;
+  font-size:18px;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+}
+
+input[type="number"]::placeholder {
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+
+  label {
+    text-align: right;
+    grid-column: 1 / 2;
+  }
+
+  input,
+  button {
+    grid-column: 2 / 3;
+  }
 }
