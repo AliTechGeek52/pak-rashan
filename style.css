@@ -101,9 +101,9 @@ form {
   max-width: 600px;
 }
 form input {
-  background: #081b1a;
+  /* background: white; */
   border: 2px solid #014535;
-  color: white;
+  /* color: white; */
 }
 
 .result{
