@@ -6,25 +6,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.header-items {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-}
-
-.header-items img {
+.logo img {
   width: 168px;
   height: 87px;
-  margin-top: -21px;
 }
 
-.links-position {
-  margin: 15px;
-}
-.line {
-  border-left: 1px solid black;
-  height: 35px;
-}
 nav ul {
   display: flex;
   justify-content: center;
@@ -45,8 +31,6 @@ nav ul li a {
 a {
   text-decoration: none;
   color: black;
-  padding: 7px;
-  /* margin: 20px; */
 }
 
 img {
@@ -94,23 +78,23 @@ section h1 {
   font-size: 18px;
 }
 
-form {
+ form {
   display: grid;
   padding: 2em;
   margin: 2rem auto 0 auto;
   max-width: 600px;
 }
-form input {
-  /* background: white; */
+form input { 
+   background: white; 
   border: 2px solid #014535;
-  /* color: white; */
+  color: black;
 }
 
-.result{
-  padding:1.7em;
-  color:#014535;
-  font-size:20px;
-  font-style:bold;
+ .result {
+  padding: 1.7em;
+  color: #014535;
+  font-size: 20px;
+  font-style: bold;
 }
 form button {
   background: #014535;
@@ -119,8 +103,8 @@ form button {
   border: none;
   color: white;
   text-align: center;
-  margin:auto;
-  font-size:18px;
+  margin: auto;
+  font-size: 18px;
 }
 
 label {
@@ -165,4 +149,5 @@ input[type="password"]::placeholder {
   button {
     grid-column: 2 / 3;
   }
-}
+} 
+
