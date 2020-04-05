@@ -39,39 +39,10 @@
         
         <label for="password">Password</label>
         <input id="password" type="password" placeholder="Enter Password">
-        
-        
-        <p>
-    <input type="login" name="button" id="button" value="LOGIN">
-  </p>
   
-       <!--- <button>LOGIN</button> -->
+       <button>LOGIN</button>
 </form>
         </form>
-        <?php
-if(isset($_POST['button']))
-{
-session_start();
-include('config2.php');
-$username = $_POST['userName'];
-$pass = $_POST['password'];
-
-$en = md5($pass); 
-$query = mysql_query ("SELECT `User_Name`, `Password` FROM `users` WHERE User_Name = '$username' AND Password = '$en'");
-$count = mysql_num_rows($query);
-
-if($count >0)
-{
-$_SESSION['login_user'] = $username;
-header ("Location: add-info.html");
-}
-else
-{
-echo mysql_error();}
-
-}
-}
-?>
     </section>
     <section>
       <form>
