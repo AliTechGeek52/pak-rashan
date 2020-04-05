@@ -10,24 +10,18 @@
   <body>
     <header>
       <!-- Header above section starts-->
-      <div class="header-items">
-        <!-- <h1>PakRashan</h1> -->
-
+      <div class="logo">
         <img src="images/logo.png" alt="logo" />
-
-        <div class="links-position">
-          <a href="sign-in.html">Sign in</a>
-          <span class="line"></span>
-          <a href="sign-up.html">Sign up</a>
-        </div>
       </div>
       <!-- Header above section ends -->
       <!-- Navigation starts -->
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About Us</a</li>
-          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#add">Add Details</a></li>
+          <li><a href="#verify">Verification</a></li>
+           
         </ul>
       </nav>
       <!-- Navigation Ends -->
@@ -54,27 +48,38 @@
       </div>
     </section>
     <!-- Message Section Ends -->
-    <!-- Verification Section Starts -->
-    <section>
-      <h1>ADD INFORMATION OF THOSE YOU ARE GIVING THE RASHAN</h1>
+    <!-- Forms Section Starts -->
+    <section id="add">
+      <h1>Add Info | Verification</h1>
       <form action="">
-        <label for="firstName">First Name</label>
-        <input id="firstName" type="text" placeholder="Enter First Name">
-        
-        <label for="middleName">Middle Name</label>
-        <input id="middleName" type="text" placeholder="Enter Middle Name">
-        
-        <label for="lastName">Last Name</label>
-        <input id="lastName" type="text" placeholder="Enter Last Name">
-        
-        <label for="cnic">Cnic No</label>
-        <input id="number" type="number" placeholder="XXXX-XXXXXX-X">
+        <label for="userName">First Name</label>
+        <input id="userName" type="text" placeholder="Enter First Name">
 
+        <label for="userName">Middle Name</label>
+        <input id="userName" type="text" placeholder="Enter Middle Name">
+
+        <label for="userName">last Name</label>
+        <input id="userName" type="text" placeholder="Enter Last Name">
+        
         <label for="date">Date</label>
         <input id="date" type="date">
+
+        <label for="cnic">CNIC No</label>
+      <input id="cnic" type="number" placeholder="XXXXX-XXXXXX-X">
+        
         
         <button>Submit</button>
+
         </form>
+    </section>
+    <section id="verify">
+      <form>
+        <label for="cnic">CNIC No</label>
+      <input id="cnic" type="number" placeholder="XXXXX-XXXXXX-X">
+        
+      <button>Verify</button>
+      </form>
+  
     </section>
     <!--- Verification Section Ends -->
   </body>
