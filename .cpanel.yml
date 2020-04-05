@@ -2,4 +2,7 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/pakrashan/public_html
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp style.css $DEPLOYPATH
+ - /bin/cp add-info.html $DEPLOYPATH
  - /bin/cp https://github.com/AliTechGeek52/pak-rashan.git $DEPLOYPATH
