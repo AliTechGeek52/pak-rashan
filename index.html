@@ -10,24 +10,16 @@
   <body>
     <header>
       <!-- Header above section starts-->
-      <div class="header-items">
-        <!-- <h1>PakRashan</h1> -->
-
+      <div class="logo">
         <img src="images/logo.png" alt="logo" />
-
-        <div class="links-position">
-          <a href="sign-in.html">Sign in</a>
-          <span class="line"></span>
-          <a href="sign-up.html">Sign up</a>
-        </div>
       </div>
       <!-- Header above section ends -->
       <!-- Navigation starts -->
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About Us</a</li>
-          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+           
         </ul>
       </nav>
       <!-- Navigation Ends -->
@@ -54,27 +46,38 @@
       </div>
     </section>
     <!-- Message Section Ends -->
-    <!-- Verification Section Starts -->
+    <!-- Forms Section Starts -->
     <section>
-      <h1>Verification Process</h1>
+      <h1>Login | Sign Up</h1>
       <form action="">
-        <label for="firstName">First Name</label>
-        <input id="firstName" type="text" placeholder="Enter First Name">
+        <label for="userName">User Name</label>
+        <input id="userName" type="text" placeholder="Enter User Name">
         
-        <label for="middleName">Middle Name</label>
-        <input id="middleName" type="text" placeholder="Enter Middle Name">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter Password">
         
-        <label for="lastName">Last Name</label>
-        <input id="lastName" type="text" placeholder="Enter Last Name">
         
-        <label for="cnic">Cnic No</label>
-        <input id="number" type="number" placeholder="XXXX-XXXXXX-X">
-        
-        <button>Verify</button>
+        <button>Login</button>
 
-        <label for="result" class="result">Result</label>
-        <input id="result" type="text" placeholder="Registered on" disabled>
         </form>
+    </section>
+    <section>
+      <form>
+        <label for="userName">User Name</label>
+      <input id="userName" type="text" placeholder="Enter User Name">
+      
+      <label for="regNo">Registration No</label>
+      <input id="regNo" type="text" placeholder="Enter Registeration No">
+
+      <label for="orgNo">Organization Name</label>
+      <input id="orgNo" type="text" placeholder="Enter Organization Name">
+
+      <label for="reason">Reason</label>
+      <input id="reason" type="text" placeholder="Enter Reason">
+        
+      <button>Sign Up</button>
+      </form>
+  
     </section>
     <!--- Verification Section Ends -->
   </body>
