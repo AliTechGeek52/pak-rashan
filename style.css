@@ -5,7 +5,9 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-
+.logo{
+  margin-left:20px;
+}
 .logo img {
   width: 168px;
   height: 87px;
@@ -21,7 +23,7 @@ nav ul li {
   list-style-type: none;
   padding: 13px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 nav ul li a {
@@ -59,7 +61,7 @@ section h1 {
 
 .message-section {
   display: flex;
-  justify-content: center;
+  text-align:center;
   align-items: center;
   padding: 20px;
   margin: 20px;
@@ -69,28 +71,29 @@ section h1 {
   height: 262px;
 }
 .message-text {
-  width: 22%;
-  padding: 30px;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  vertical-align: middle;
+  width: 80%;
   font-size: 18px;
+  margin: auto;
+  padding: 15px;
 }
 
- form {
+pre{
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+form {
   display: grid;
   padding: 2em;
   margin: 2rem auto 0 auto;
   max-width: 600px;
 }
-form input { 
-   background: white; 
+form input {
+  background: white;
   border: 2px solid #014535;
   color: black;
 }
 
- .result {
+.result {
   padding: 1.7em;
   color: #014535;
   font-size: 20px;
@@ -105,6 +108,7 @@ form button {
   text-align: center;
   margin: auto;
   font-size: 18px;
+  cursor:pointer;
 }
 
 label {
@@ -149,5 +153,4 @@ input[type="password"]::placeholder {
   button {
     grid-column: 2 / 3;
   }
-} 
-
+}
