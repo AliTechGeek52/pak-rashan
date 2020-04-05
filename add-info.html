@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    $db = mysqli_connect('localhost:3306 ','pakrashan_admin','Fretab@23','pakrashan_rashan');
+?>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -79,7 +82,8 @@
       <input id="cnic" type="number" placeholder="XXXXX-XXXXXX-X">
         
         
-        <button>Submit</button>
+        <button Submit onclick=$query = "INSERT INTO `pakrashan` (`First_Name`, `Middle_Name`, `Last_Name`, `CNIC`, `Date`, `Org_Donor`) VALUES ('Nabeel2', 'Test2', 'Aziz2', '12345678901235', '2020-04-03', 'TEST ENTRY2');`;";</button>
+
 
         </form>
     </section>
