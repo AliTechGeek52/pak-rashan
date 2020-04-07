@@ -21,7 +21,7 @@ try {
       echo "<small>Fill all the fields</small>";
     } else {
       if ($_REQUEST['org_req_password'] == $_REQUEST['confirm_password']) {
-        $password = $_REQUEST['org_req_password'];
+        $password = $_REQUEST['org_req__reg_password'];
         $org_req_name = $_REQUEST['org_req_name'];
         $org_req_number = $_REQUEST['org_req_number'];
         $org_req_email = $_REQUEST['org_req_email'];
@@ -44,21 +44,21 @@ try {
 
 
 if (isset($_POST["login"])) {
-  if (empty($_POST["org_name"]) || empty($_POST["org_password"])) {
+  if (empty($_POST["org_name"]) || empty($_POST["org_req_password"])) {
     $message = '<label>All fields are required</label>';
   } else {
-    $query = "SELECT * FROM organizations WHERE org_name = :org_name AND org_password = :org_password";
+    $query = "SELECT * FROM organizations WHERE org_name = :org_name AND org_req_password = :org_password";
     $statement = $conn->prepare($query);
     $statement->execute(
       array(
         'org_name'     =>     $_POST["org_name"],
-        'org_password'     =>     $_POST["org_password"]
+        'org_password'     =>     $_POST["org_req_password"]
       )
     );
     $count = $statement->rowCount();
     if ($count > 0) {
       $_SESSION["org_name"] = $_POST["org_name"];
-      $_SESSION["org_password"] = $_POST["org_password"];
+      $_SESSION["org_req_password"] = $_POST["org_req_password"];
 
       header("location:add-volunteer.php");
     } else {
@@ -73,7 +73,7 @@ if (isset($_POST["login"])) {
 <?php
 
 if (isset($_POST["login_vol"])) {
-  if (empty($_POST["org_name"]) || empty($_POST["org_password"])) {
+  if (empty($_POST["org_name"]) || empty($_POST["org_req_password"])) {
     $message = '<label>All fields are required</label>';
   } else {
     $query = "SELECT * FROM volenters WHERE vol_user_name = :org_name AND vol_password = :org_password";
