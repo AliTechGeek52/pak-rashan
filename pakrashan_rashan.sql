@@ -1,5 +1,5 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
@@ -60,7 +60,7 @@ CREATE TABLE `organization_request` (
   `org_req_name` varchar(30) NOT NULL,
   `org_req_number` varchar(15) NOT NULL,
   `org_req_email` varchar(50) NOT NULL,
-  `org_req_password` varchar(50) NOT NULL,
+  `org_password` varchar(50) NOT NULL,
   `org_req_reason` varchar(150) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -69,7 +69,7 @@ CREATE TABLE `organization_request` (
 -- Dumping data for table `organization_request`
 --
 
-INSERT INTO `organization_request` (`org_req_id`, `org_req_name`, `org_req_number`, `org_req_email`, `org_req_password`, `org_req_reason`, `created_at`) VALUES
+INSERT INTO `organization_request` (`org_req_id`, `org_req_name`, `org_req_number`, `org_req_email`, `org_password`, `org_req_reason`, `created_at`) VALUES
 (13, 'rectoSoft', '1234', 'recto@gmail.com', '12345', 'kuch bhi', '2020-04-07 06:06:54'),
 (14, 'google', '4321', 'google@gmail.com', '12345', 'kuch nahi', '2020-04-07 06:07:33'),
 (15, 'asda', 'asdas', 'asdas', 'asdas', 'asda', '2020-04-07 06:20:19'),
