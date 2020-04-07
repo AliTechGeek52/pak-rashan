@@ -13,15 +13,6 @@ body {
   height: 87px;
 }
 
-h3 {
-  color: black;
-  font-size: 18px;
-  text-align: left;
-  padding: 16px;
-  letter-spacing: 1px;
-  margin-top: -5px;
-}
-
 nav ul {
   display: flex;
   justify-content: center;
