@@ -3,9 +3,9 @@ session_start();
 // Include config file
 // require_once "config.php";
 
-$dsn = "mysql:host=localhost; dbname=pak";
-$db_user = "root";
-$db_password = "";
+$dsn = "mysql:host=localhost; dbname=pakrashan_rashan";
+$db_user = "pakrashan_admin";
+$db_password = "Fretab@23";
 
 
 // For connecting to database currently i am using pdo approach...
