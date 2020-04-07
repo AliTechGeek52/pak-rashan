@@ -11,7 +11,7 @@ body {
 .logo img {
   width: 168px;
   height: 87px;
-
+}
 
 h3 {
   color: black;
@@ -20,9 +20,8 @@ h3 {
   padding: 16px;
   letter-spacing: 1px;
   margin-right:100px;
+  margin-top: -5px;
 }
-}
-
 
 nav ul {
   display: flex;
