@@ -9,4 +9,5 @@ deployment:
  - /bin/cp add-volunteer.php $DEPLOYPATH
  - /bin/cp logout.php $DEPLOYPATH
  - /bin/cp req.php $DEPLOYPATH
+ - /bin/cp pakrashan_rashan.sql $DEPLOYPATH
  - /bin/cp https://github.com/AliTechGeek52/pak-rashan.git $DEPLOYPATH
