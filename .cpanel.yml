@@ -9,4 +9,6 @@ deployment:
  - /bin/cp add-volunteer.php $DEPLOYPATH
  - /bin/cp logout.php $DEPLOYPATH
  - /bin/cp req.php $DEPLOYPATH
+ - /bin/cp .github/workflows $DEPLOYPATH
+ - /bin/cp .vscode $DEPLOYPATH
  - /bin/cp pakrashan_rashan.sql $DEPLOYPATH
