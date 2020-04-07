@@ -13,6 +13,16 @@ body {
   height: 87px;
 }
 
+h3 {
+  background-color: #014535;
+  color: white;
+  font-size: 18px;
+  text-align: right;
+  padding: 16px;
+  letter-spacing: 1px;
+}
+
+
 nav ul {
   display: flex;
   justify-content: center;
