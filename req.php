@@ -34,7 +34,7 @@ if (isset($_REQUEST['done'])) {
     $ap_number = $_REQUEST['ap_number'];
     $ap_email = $_REQUEST['ap_email'];
     $ap_password = $_REQUEST['ap_password'];
-    $sql = "INSERT INTO organizations (org_name, org_number, org_email, org_password) VALUES ('$ap_name', '$ap_number', '$ap_email', '$ap_password')";
+    $sql = "INSERT INTO organizations (org_name, org_number, org_email, org_req_password) VALUES ('$ap_name', '$ap_number', '$ap_email', '$ap_password')";
     $conn->exec($sql);
     echo "<small>data entry done</small>";
 
