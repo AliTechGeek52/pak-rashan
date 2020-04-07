@@ -21,7 +21,7 @@ try {
       echo "<small>Fill all the fields</small>";
     } else {
       if ($_REQUEST['org_req_password'] == $_REQUEST['confirm_password']) {
-        $password = $_REQUEST['org_req__reg_password'];
+        $password = $_REQUEST['org_req_reg_password'];
         $org_req_name = $_REQUEST['org_req_name'];
         $org_req_number = $_REQUEST['org_req_number'];
         $org_req_email = $_REQUEST['org_req_email'];
