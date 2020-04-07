@@ -2,6 +2,7 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/pakrashan/public_html
+ - /bin/cp -R images $DEPLOYPATH
  - /bin/cp index.php $DEPLOYPATH
  - /bin/cp style.css $DEPLOYPATH
  - /bin/cp add-info.php $DEPLOYPATH
